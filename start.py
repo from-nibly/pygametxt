@@ -1,5 +1,5 @@
 from rooms import roomlist
 
-room = roomlist.room1
+room = roomlist.entrance
 while not room == None:
   room = room.run();

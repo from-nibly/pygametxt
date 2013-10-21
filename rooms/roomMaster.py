@@ -6,7 +6,7 @@ class ROOMMaster:
   def run(self):
     cmd = ''
     while not cmd == 'quit':
-      cmd = lib.readcmd();
+      cmd = lib.readcmd().lower();
       if(cmd in self.commands):
         result = self.commands[cmd]()
         if not result == None:
