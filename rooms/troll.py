@@ -3,6 +3,11 @@ from roomMaster import ROOMMaster
 
 local = {}
 
+def attackTheTroll():
+  if("bat" in play.inventory):
+    
+  
+
 
 class Troll(ROOMMaster):
   def synopsis(self):
@@ -17,4 +22,5 @@ class Troll(ROOMMaster):
     
   def __init__(self):
     ROOMMaster.__init__(self)
+    self.commands["attack the troll"] = attackTheTroll;
     
